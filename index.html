@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Golden Muse</title>
+    <link rel="icon" href="floralLady.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>MgM</h2>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <button class="dropdown-icon">☰</button>
+            <!-- Dropdown Icon (left) -->
+            <div class="dropdown-content">
+                <a href="#">Clothing</a>
+                <a href="#">Shoes</a>
+                <a href="#">Accessories</a>
+                <a href="#">Collections</a>
+                <a href="#">E-Gift Cards</a>
+                <a href="#">Sale</a>
+                <a href="#">Rewards</a>
+            </div>
+        </div>
+
+        <nav class="nav-center">
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <div class="dropdown">
+                <a href="">Trends</a>
+                <div class="dropdown-content">
+                    <!-- India Submenu -->
+                    <div class="submenu">
+                        <button class="submenu-btn">Apna Ghar</button>
+                        <div class="submenu-content">
+                            <a href="garba.html" target="content-frame">Garba Nights</a>
+                            <a href="diwali.html" target="content-frame">Diwali Lights</a>
+                        </div>
+                    </div>
+
+                    <!-- Western World Submenu -->
+                    <div class="submenu">
+                        <button class="submenu-btn">Western World</button>
+                        <div class="submenu-content">
+                            <a href="hallowen.html" target="content-frame">Halloween Haunts</a>
+                            <a href="christmas.html" target="content-frame">Christmas Bells</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="about.html" target="_blank">About Us</a>
+
+            <div class="dropdown">
+                <a href="#">Contact</a>
+                <div class="dropdown-content">
+                    <a href="#"> Email us at 404notfound@gmail.com</a>
+                    <a href="#">Call us: 8889991404</a>
+                </div>
+            </div>
+            
+            
+        </nav>
+        <div class="nav-right">
+            
+            <div class="search-container">
+                <input type="checkbox" id="toggle-search">
+                <label for="toggle-search" class="search-icon">🔍</label>
+                <input type="text" id="search-bar" placeholder="Search..." />
+            </div>
+            <!-- Sign-In Icon -->
+<div class="signin-container">
+    <input type="checkbox" id="signin-toggle">
+    <label for="signin-toggle" class="signin-icon">👤</label>
+
+    <!-- Sign-In Form -->
+    <div class="signin-modal">
+        <form class="signin-form">
+            <h2>Sign In</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit">Submit</button>
+            <label for="signin-toggle" class="back-button">Back</label>
+        </form>
+    </div>
+</div>
+
+            <a href="#favorites" class="icon">❤</a>
+            <a href="#cart" class="icon">🛒</a>
+        </div>
+    </div>
+
+   
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to My Golden Muse Fashion</h2>
+        <p>Uncover your spooky style with our exclusive collections!</p>
+        <a href="shop.html" target="content-frame"class="button">Shop Now</a>
+    </section>
+
+
+
+    
+    
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+        <h2>Our Collections</h2>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1094768184/photo/luxury-fashionable-gold-clothing-and-stationery-items-flat-lay-on-white-background.jpg?s=1024x1024&w=is&k=20&c=Y5_mpEx0bBs9unZtSZnNkQSAqmSyrT8wmN1qd-pS3fY=" alt="Ladies Fashion">
+            <p>Ladies Fashion</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0086/0150/1792/files/Girls_Clothing_-_Kidstudio.jpg?v=1600863380" alt="Kids Fashiom">
+            <p>Kids Fashion</p>
+        </div>
+        <div class="product">
+            <img src="https://static.wixstatic.com/media/3f3442_51a3e8cef54542918072348ce1abfce8~mv2.jpg/v1/fill/w_544,h_306,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3f3442_51a3e8cef54542918072348ce1abfce8~mv2.jpg" alt="Upcoming Fashion">
+            <p>Yet to come</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0071/7406/2170/files/accessories-blog_1024x1024.jpg?v=1584702437" alt="Accessories">
+            <p>Accessories</p>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1279108197/photo/variety-of-womens-fashion-comfortable-shoes-of-all-seasons-on-a-light-background-top-view.jpg?s=612x612&w=0&k=20&c=_mdUMo2tsufgilqv8IQeW6hp8YjICTR8_tF-YP1Zgxk=" alt="Footwear">
+            <p>Footwear</p>
+        </div>
+        
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h1>My Golden Muse Fashion</h1>
+            <p>Made for Bold You!</p>
+            
+        </div>
+        
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Trends</a></li>
+                
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <div>
+        
+                <a href="newsletter.html" target="content-frame"class="button"><h3>NEWSLETTER</h3></a>
+            </div>
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+</div>
+
+        <div class="footer-subscribe">
+            <h3>Stay in the Loop</h3>
+            
+            <form action="#">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 My Golden Muse Fashion. All rights reserved.</p>
+    </div>
+
+    <div class="music-player">
+        <iframe width="300" height="120" src="https://www.youtube.com/embed/w3HZ3ior4_s?si=PjraXTOQtPKKrBag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+</footer>
+
+</body>
+</html>

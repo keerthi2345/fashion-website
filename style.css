@@ -1,0 +1,506 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+/* Sticky Navbar Styling */
+.navbar {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.nav-left .dropdown-icon {
+    background: none;
+    border: none;
+    color: #ff751a;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+/* Show Dropdown on Hover */
+.nav-left:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.nav-center {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-center a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-center a:hover {
+    color: #ff751a;
+}
+
+.dropdown {
+    color: #ffff00;
+    font-size: 26px;
+}
+
+.nav-center a,
+.dropdown-btn,
+.submenu-btn {
+    color: #ff7300;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-content,
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    margin-top: 5px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content a,
+.submenu-content a {
+    display: block;
+    padding: 8px 12px;
+    color: #ffdd00;
+}
+
+.dropdown-content a:hover,
+.submenu-content a:hover {
+    background-color: #444;
+}
+
+/* Show dropdown when hovering or clicking */
+.dropdown:hover .dropdown-content,
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+/* Submenu Position */
+.submenu {
+    position: relative;
+}
+
+.submenu-content {
+    left: 100%;
+    top: 0;
+}
+
+/* Right Part of Navbar */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icons */
+}
+
+.nav-right .icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-right .icon:hover {
+    color: #ff751a;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('halloween-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ff751a;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero .button {
+    background-color: #ff751a;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .button:hover {
+    background-color: #e65c00;
+}
+
+/* Collections Section */
+.collections {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.collections h2 {
+    font-size: 2rem;
+    color: #ff751a;
+    margin-bottom: 30px;
+}
+
+.product {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+footer p {
+    color: #aaa;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #ff751a;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Links inside Dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+    color: #ff751a;
+}
+
+
+.header {
+    text-align: center;
+    font-style: italic;
+    color: #e65c00;
+    font-size: larger;
+    font-variant:small-caps;
+    font-size:larger;
+    font-stretch:ultra-expanded;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+
+/* Style for the search container */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the actual checkbox */
+#toggle-search {
+    display: none;
+}
+
+/* Style for the search icon label */
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Style for the search input */
+#search-bar {
+    width: 0;
+    padding: 8px;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+/* Show the search bar when checkbox is checked */
+#toggle-search:checked + .search-icon + #search-bar {
+    width: 200px;
+    opacity: 1;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFA500; /* Accent color */
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+.footer-links h3,
+.footer-social h3,
+.footer-subscribe h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FFA500;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #FFA500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFA500;
+}
+
+.footer-subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.footer-subscribe button {
+    padding: 10px 20px;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-subscribe button:hover {
+    background-color: #e69500;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #777;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFA500;
+}
+
+/* Sign-in Icon */
+.signin-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Sign-in Container */
+.signin-container {
+    position: relative;
+}
+
+/* Hide the actual checkbox */
+#signin-toggle {
+    display: none;
+}
+
+/* Style for the sign-in icon label */
+.signin-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;   
+}
+
+/* Sign-in Modal */
+.signin-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show the modal when the checkbox is checked */
+#signin-toggle:checked + .signin-icon + .signin-modal {
+    display: flex;
+}
+
+/* Sign-in Form */
+.signin-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.signin-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.signin-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.signin-form input[type="email"],
+.signin-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.signin-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #FFA500;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 15px;
+    color: #777;
+    cursor: pointer;
+    text-decoration: underline;
+}
